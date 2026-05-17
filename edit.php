@@ -1,6 +1,6 @@
 <?php
 
-include("connection.php");
+include("../config/db.php");
 
 $id = $_GET['id'];
 
@@ -31,6 +31,9 @@ $row = mysqli_fetch_assoc($result);
 
 <label>Telephone</label>
 <input type="text" name="telephone" value="<?php echo $row['telephone']; ?>">
+
+<label>Progress</label>
+<input type="text" name="progress" value="<?php echo $row['progress']; ?>">
 
 <input type="submit" value="Update User">
 

@@ -1,6 +1,6 @@
 <?php
 
-include("connection.php");
+include("../config/db.php");
 
 $name = mysqli_real_escape_string($conn, $_POST['name']);
 
@@ -11,12 +11,14 @@ $problem = mysqli_real_escape_string($conn, $_POST['problem']);
 $level = mysqli_real_escape_string($conn, $_POST['level']);
 
 $description = mysqli_real_escape_string($conn, $_POST['description']);
+$progress = "Pending";
+$date = date("Y-m-d H:i:s");
 
 $sql = "INSERT INTO requests
-(name, telephone, problem, level_priority, description)
+(postedOn,name, telephone, problem, level_priority, description, progress)
 
 VALUES
-('$name', '$telephone', '$problem', '$level', '$description')";
+('$date','$name', '$telephone', '$problem', '$level', '$description', '$progress')";
 
 if(mysqli_query($conn, $sql)){
 
