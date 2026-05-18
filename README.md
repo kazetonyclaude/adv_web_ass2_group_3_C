@@ -8,7 +8,10 @@ step3:enter the link into the search bar
 step4: then navigate through the website
 ---------database import steps-------------
 step1: enter the link to the server hosting the database
-step2: select the database which stores the table con
+step2: select the database which stores the table for your data
+step3: select the table that's storing your data
+step4: click on import, it's between the export and operations, in the navigation bar
+step5: 
 ----------login credentials--------------
 there's no need to log in you just visit the website fill the form and then submit
 ----------live link----------------
