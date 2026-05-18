@@ -7,11 +7,12 @@ step2:open a web browser
 step3:enter the link into the search bar
 step4: then navigate through the website
 ---------database import steps-------------
-step1: enter the link to the server hosting the database
-step2: select the database which stores the table for your data
-step3: select the table that's storing your data
-step4: click on import, it's between the export and operations, in the navigation bar
-step5: 
+step1: Open the link to the server hosting the database (for example, phpMyAdmin).
+step2: Select the database that contains the table where the data will be imported.
+step3: Select the target table for the import.
+step4: Click the “Import” tab located in the navigation bar between “Export” and “Operations”.
+step5: Choose the file containing the data to import, such as a .csv or Excel file.
+step6: Click “Go” to start importing the data from the selected file into the table.
 ----------login credentials--------------
 there's no need to log in you just visit the website fill the form and then submit
 ----------live link----------------
