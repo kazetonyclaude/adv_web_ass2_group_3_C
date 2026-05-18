@@ -1,16 +1,21 @@
 <?php
 
-include("../config/db.php");
+include("../../config/db.php");
+$name = stripslashes($_POST['name']);
+$name = mysqli_real_escape_string($conn, $name);
 
-$name = mysqli_real_escape_string($conn, $_POST['name']);
+$telephone = stripslashes($_POST['telephone']);
+$telephone = mysqli_real_escape_string($conn, $telephone);
 
-$telephone = mysqli_real_escape_string($conn, $_POST['telephone']);
+$problem = stripslashes($_POST['problem']);
+$problem = mysqli_real_escape_string($conn, $problem);
 
-$problem = mysqli_real_escape_string($conn, $_POST['problem']);
+$level = stripslashes($_POST['level']);
+$level = mysqli_real_escape_string($conn, $level);
 
-$level = mysqli_real_escape_string($conn, $_POST['level']);
+$description = stripslashes($_POST['description']);
+$description = mysqli_real_escape_string($conn, $description);
 
-$description = mysqli_real_escape_string($conn, $_POST['description']);
 $progress = "Pending";
 $date = date("Y-m-d H:i:s");
 
@@ -25,7 +30,7 @@ if(mysqli_query($conn, $sql)){
     echo "
     <h2>Request Submitted Successfully</h2>
 
-    <a href='index.php'>Go Back</a>
+    <a href='../../public/index.php'>Go Back</a>
     ";
 
 }else{

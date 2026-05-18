@@ -1,5 +1,5 @@
 <?php
-include("../config/db.php");
+include("../../config/db.php");
 
 $sql = "SELECT * FROM requests ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
@@ -17,7 +17,7 @@ $result = mysqli_query($conn, $sql);
 
 <h1>USS Admin Dashboard</h1>
 
-<a href="index.php" class="back">Back Home</a>
+<a href="../../public/index.php" class="back">Back Home</a>
 
 <br><br>
 
@@ -55,9 +55,9 @@ $result = mysqli_query($conn, $sql);
 <td><?php echo $row['description']; ?></td>
 
 <td>
-<a class="btn edit" href="edit.php?id=<?php echo $row['id']; ?>">Edit</a><br><br>
+<a class="btn edit" href="../../public/edit.php?id=<?php echo $row['id']; ?>">Edit</a><br><br>
 
-<a class="btn delete" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+<a class="btn delete" href="../../public/delete.php?id=<?php echo $row['id']; ?>">Delete</a>
 </td>
 
 </tr>

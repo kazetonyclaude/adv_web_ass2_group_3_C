@@ -16,7 +16,7 @@ $row = mysqli_fetch_assoc($result);
 <html>
 <head>
     <title>Edit Request</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../app/views/admin.css">
 </head>
 <body>
 
@@ -37,7 +37,7 @@ $row = mysqli_fetch_assoc($result);
 
 <input type="submit" value="Update User">
 
-<a href="dashboard.php" class="back">Back Dashboard</a>
+<a href="../app/views/dashboard.php" class="back">Back Dashboard</a>
 
 </form>
 

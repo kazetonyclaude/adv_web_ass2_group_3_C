@@ -17,7 +17,7 @@
     <a href="index.php">Home</a>
     <a href="#track_section">Track</a>
     <a href="#registration_section">Registration</a>
-    <a href="dashboard.php">Admin</a>
+    <a href="../app/views/dashboard.php">Admin</a>
 </nav>
 </header>
 
@@ -44,7 +44,7 @@
         <h2>Submit Request</h2>
         <hr>
 
-        <form action="submit.php" method="post">
+        <form action="../app/controllers/submit.php" method="post">
             <div class="main_item" id="track_section">
 
     <h2>Track Requests</h2>
@@ -109,7 +109,7 @@
     </div>
 
 </div>
-
+    
             <label>Name</label>
             <input class="text" type="text" name="name" placeholder="Enter your name" required>
 

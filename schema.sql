@@ -9,5 +9,5 @@ CREATE TABLE requests(
     telephone VARCHAR(20),
     problem VARCHAR(100),
     level_priority VARCHAR(20),
-    description TEXT,
+    description TEXT
 );
